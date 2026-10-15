@@ -1,0 +1,45 @@
+{
+  "expo": {
+    "name": "QR Attendance - Lyrel",
+    "slug": "qr-attendance-lyrel",
+    "version": "1.3.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "dark",
+    "scheme": "qrattendance",
+    "icon": "./assets/icons/app-icon.png",
+    "plugins": [
+      "expo-router",
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "Allow QR Attendance to use your camera to scan attendance QR codes."
+        }
+      ],
+      [
+        "expo-splash-screen",
+        {
+          "backgroundColor": "#080A16",
+          "image": "./assets/images/splash.png",
+          "imageWidth": 200,
+          "resizeMode": "contain"
+        }
+      ]
+    ],
+    "android": {
+      "package": "com.lyrel.qrattendance",
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/icons/app-icon.png",
+        "backgroundColor": "#080A16"
+      },
+      "permissions": [
+        "android.permission.CAMERA"
+      ]
+    },
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "b7044808-dcb1-44c7-ace9-416cd5b1d67a"
+      }
+    }
+  }
+}
